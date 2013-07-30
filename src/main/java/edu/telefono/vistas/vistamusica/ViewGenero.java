@@ -68,7 +68,7 @@ public String nombreGenero;
 	
 	public static void mostrarPista(){
 				
-		Pista pista=new Pista();
+		ViewPista pista=new ViewPista();
 		pista.seleccionarPista();
 				
 	}

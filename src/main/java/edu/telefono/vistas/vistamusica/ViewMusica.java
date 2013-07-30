@@ -54,13 +54,13 @@ public static void menuPrincipal(){
 	}
 	
 	public static void buscarGenero(){
-		Genero genero=new Genero();
+		ViewGenero genero=new ViewGenero();
 		genero.elegirGenero();
 					
 	}
 	
 	public static void buscarArtista(){
-		Artista artista=new Artista();
+		ViewArtista artista=new ViewArtista();
 		artista.elegirArtista();
 				
 	}

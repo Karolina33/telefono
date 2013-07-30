@@ -59,7 +59,7 @@ public class ViewArtista {
 		
 	}
 	public static void mostrarPista(){
-		Pista pistaArt=new Pista();
+		ViewPista pistaArt=new ViewPista();
 		pistaArt.seleccionarPistaArt();		
 	}
 
