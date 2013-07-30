@@ -1,20 +1,22 @@
-package edu.telefono.aplicaciones;
+package edu.telefono.vistas.vistaaplicaciones;
+
 
 import java.util.Scanner;
-import edu.telefono.aplicaciones.Menu;
-import edu.telefono.aplicaciones.*;
+import edu.telefono.vistas.vistaaplicaciones.Aplicaciones;
 
-public class Aplicaciones {
 
-  //public Menu menu;
-
+public class Telefono {
+	
 	public static void main(String[] args) {
 
-		Aplicaciones aplicaciones = new Aplicaciones();
-		aplicaciones.mostrarMenu();
+		Telefono telefono = new Telefono();
+		telefono.menuPrincipal();
+		
+		
+		
 	}
 	
-	public void mostrarMenu(){
+	 void menuPrincipal(){
 		Scanner read = new Scanner(System.in);
 		int op = 0;
 
@@ -26,9 +28,8 @@ public class Aplicaciones {
 
 			if (op == 1) {
 
-				Menu menu = new Menu();
-				menu.mostrarMenu();
-
+				Aplicaciones aplicaciones = new Aplicaciones();
+				aplicaciones.menuPrincipal();
 			}
 
 			else if (op == 2) {
@@ -40,5 +41,6 @@ public class Aplicaciones {
 
 		} while (op != 2);
 	}
+
 
 }
