@@ -1,9 +1,11 @@
 package edu.telefono.vistas.vistaarchivo;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 
-public class VistaArchivo {
-
+public class ViewFiles {
 	private static FileInputStream fin;
 
 	public static void main(String[] arg){
