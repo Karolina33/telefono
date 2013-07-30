@@ -1,4 +1,4 @@
-package edu.vistas.vistacontacto;
+package edu.telefono.vistas.vistacontacto;
 import java.io.*;
 //import edu.telefono.vistas.vistaaplicacion.VistaMenu; aqui se invoca a la vista principal
 
