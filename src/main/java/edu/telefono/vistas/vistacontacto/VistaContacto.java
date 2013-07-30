@@ -6,8 +6,7 @@ import edu.telefono.contacto.Agenda;
 
 public class VistaContacto
 {
-  public static void main( String args[] )
-	{
+  public void vistacontacto() {
 		Agenda agenda=new Agenda();
 		int opcion=1;
 		while (opcion!=0)
