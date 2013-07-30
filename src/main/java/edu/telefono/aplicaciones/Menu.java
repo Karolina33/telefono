@@ -2,6 +2,7 @@ package edu.telefono.aplicaciones;
 
 import java.util.Scanner;
 import edu.telefono.aplicaciones.*;
+import edu.telefono.musica.Musica;
 
 public class Menu {
 
@@ -29,6 +30,9 @@ public class Menu {
 				// ejecutar el Programa Dos
 			} else if (op == 3) {
 				// ejecutar el Programa Dos
+				Musica mus=new Musica();
+				mus.menuPrincipal();
+				System.out.println("Opcion es musica");
 			} else if (op == 4) {
 				// ejecutar el Programa Dos
 			} else if (op == 5) {
