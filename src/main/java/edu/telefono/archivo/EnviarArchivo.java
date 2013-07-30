@@ -15,9 +15,10 @@ import com.sun.jersey.multipart.file.FileDataBodyPart;
 import com.sun.jersey.multipart.impl.MultiPartWriter;
 
 public class EnviarArchivo {
-	public void enviandoArchivo() {
+
+  public void enviandoArchivo() {
 		String urlDelServicio = "http://localhost:8080/generador-encuestas/resolver/send/file";
-		String urlDelArchivoDelSistema = "/home/mrivera/ola.txt";
+		String urlDelArchivoDelSistema = "/C:/Prueba/Archivo.txt";
 
 		ClientConfig configuracionDelCliente = new DefaultClientConfig();
 		configuracionDelCliente.getClasses().add(MultiPartWriter.class);
