@@ -1,26 +1,24 @@
 package edu.telefono.mensaje;
 
-import java.io.IOException;
-import javax.net.ssl.HttpsURLConnection ;
+import javax.ws.rs.core.MultivaluedMap;
 
-import com.sun.jersey.spi.inject.ClientSide;
-
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.WebResource;
+import com.sun.jersey.core.util.MultivaluedMapImpl;
 
 public class EscribirSms {
-  
-	public void enviandoMensaje () {
-		ClientSide Client = Client.create();
-		MultivaluedMap<String, parametros, String> MultivaluedMapImpl = new ();
-		parametros.add ("sms", "ola k ace");
+
+	public void enviandoMensaje(String msj) {
 		
-		WebResource WebResource = client.resource ("http://localhost:8080/generador-encuestas/resolver/send/sms");		
-		Cadena respuestaServicio = webResource.queryParams (parametros).get(String.class);
-		
-		System.out.println (respuestaServicio);
-	}	 
+		Client client = Client.create();
+		MultivaluedMap<String, String> parametros = new MultivaluedMapImpl();
+		parametros.add("sms", " "+ msj);
+
+		WebResource webResource = client.resource("http://localhost:8080/generador-encuestas/resolver/send/sms");
+		String respuestaServicio = webResource.queryParams(parametros).get(
+				String.class);
+
+		System.out.println(respuestaServicio);
+	}
+
 }
