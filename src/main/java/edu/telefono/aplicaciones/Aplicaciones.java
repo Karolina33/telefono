@@ -1,14 +1,19 @@
-package edu.telefono.aplicaciones;
+package edu.telefono.vistas.vistaaplicaciones;
 
 import java.util.Scanner;
+
+import edu.telefono.musica.Musica;
+import edu.telefono.vistas.vistaaplicaciones.Telefono;
 import edu.telefono.aplicaciones.*;
+import edu.telefono.vistas.vistaarchivo.*;
 
-public class Menu {
 
-  public void mostrarMenu() {
+public class Aplicaciones {
+	
+	public void menuPrincipal() {
 		
 		
-
+		 
 		Scanner read = new Scanner(System.in);
 		int op = 0;
 
@@ -22,17 +27,28 @@ public class Menu {
 			op = read.nextInt();
 
 			if (op == 1) {
-				// ejecutar el Programa Uno
+				//Contacto contacto = new Contacto();
+				//contacto.mostarcontacto();
 			}
 
 			else if (op == 2) {
-				// ejecutar el Programa Dos
+				
+				Calculadora calculadora = new Calculadora();
+				calculadora.menu();
 			} else if (op == 3) {
-				// ejecutar el Programa Dos
+
+				Musica musica = new Musica();
+				musica.menuPrincipal();
+				
+				
 			} else if (op == 4) {
-				// ejecutar el Programa Dos
+				EscribirSms escribirSms = new EscribirSms();
+				escribirSms.enviandoMensaje ();
+				
 			} else if (op == 5) {
-				// ejecutar el Programa Dos
+				EnviarArchivo enviarArchivo = new EnviarArchivo();
+				enviarArchivo.enviandoArchivo();
+				
 			} else if (op == 6) {
 				System.out.println("Gracias por utilizar la aplicación");
 			} else {
