@@ -14,13 +14,13 @@ public class Musica {
 	public int tamaño;
 	public String genero;
 	public String artista;
-	
+	public static String opcion;
 	/*public static void main(String arg[]){
 		menuPrincipal();
 	} */
 	
 	public static void menuPrincipal(){
-		String opcion;
+		
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Tipo de Busqueda\n");
 		Scanner entrada=new Scanner(System.in);
 		System.out.println(titulo);
