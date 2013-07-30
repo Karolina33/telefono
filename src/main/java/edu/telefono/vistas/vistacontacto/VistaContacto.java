@@ -47,7 +47,10 @@ public class VistaContacto
 		
 				case 5:
 					agenda.elimnom();
-					break;				
+					break;	
+				default:
+					System.out.println("opcion no valida");
+					break;
 							
 			}
 		
