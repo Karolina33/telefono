@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class ViewFiles {
-	private static FileInputStream fin;
+  private static FileInputStream fin;
 
 	public static void main(String[] arg) {
 
