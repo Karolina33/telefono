@@ -2,7 +2,14 @@ package edu.telefono.vistas.vistamusica;
 
 import edu.telefono.musica.Musica;
 import edu.telefono.musica.Pista;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.nio.Buffer;
 import java.util.*;
+
+import org.xml.sax.InputSource;
 
 public class ViewArtista {
 
@@ -14,12 +21,22 @@ public class ViewArtista {
 
 	}*/
 	public String nombreArtista;
-	public static String opcion;
+	public static char opcion;
 	
 	public static void elegirArtista(){
 				
 	    String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir el Nombre del Artista2\n");
-		Scanner entrada=new Scanner(System.in);
+		//Scanner entrada=new Scanner(System.in);
+		
+		Scanner entrada = new Scanner(System.in); 
+		try {
+			opcion = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
+		
+		
 		System.out.println(titulo);
 		System.out.println("1.  Alejandro fernández");
 		System.out.println("2.  Niga ");
@@ -28,31 +45,32 @@ public class ViewArtista {
 		System.out.println("   ");
 		System.out.println("Regresar al menu__  R");
 		System.out.println("salir de la aplicacion__  S");
-		opcion=entrada.nextLine();
+		
+		//opcion=entrada.nextLine();
 				
 		switch (opcion){
-		case "1":			
+		case '1':			
 			mostrarPista();
 			break;
-		case "2":
+		case '2':
 			mostrarPista();
 			break;
-		case "3":
+		case '3':
 			mostrarPista();
 			break;
-		case "4":
+		case '4':
 			mostrarPista();
 			break;
-		case "r":
+		case 'r':
 			Musica men=new Musica();
 			men.music();
 			break;
-		case "s":
+		case 's':
 			System.exit(0);
 			break;
 		default:
 			System.out.println(" ");
-			System.out.println("La eleccion no es correcta vuelve a elegir");
+		//	System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");
 			elegirArtista();
 		}

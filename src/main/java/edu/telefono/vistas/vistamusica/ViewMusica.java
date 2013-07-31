@@ -1,5 +1,6 @@
 package edu.telefono.vistas.vistamusica;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import edu.telefono.musica.Artista;
@@ -15,7 +16,7 @@ public class ViewMusica {
 	public int tamaño;
 	public String genero;
 	public String artista;
-	public static String opcion;
+	public static char opcion;
 	
 		
 public static void menuPrincipal(){
@@ -29,24 +30,30 @@ public static void menuPrincipal(){
 		System.out.println("Regresar al Menú Principal__  R");
 		System.out.println("salir de la aplicación__  S\n");
 		System.out.println("  Elige una Opción: ");
-		opcion=entrada.nextLine();
+		
+		try {
+			opcion = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
 				
 		switch (opcion){
-		case "1":
+		case '1':
 			buscarGenero();
 			break;
-		case "2":
+		case '2':
 			buscarArtista();
 			break;
-		case "r":
+		case '3':
 			regresarMenuPrincipal();
 			break;
-		case "s":
+		case '4':
 			salir();
 			break;
 		default:
 			System.out.println(" ");
-			System.out.println("La eleccion no es correcta vuelve a elegir");
+		//	System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");
 			regresarMenuPrincipal();
 		}

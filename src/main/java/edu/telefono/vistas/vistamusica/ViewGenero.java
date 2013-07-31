@@ -1,5 +1,6 @@
 package edu.telefono.vistas.vistamusica;
 
+import java.io.IOException;
 import java.util.*;
 import edu.telefono.musica.Musica;
 import edu.telefono.musica.Pista;
@@ -15,10 +16,9 @@ public class ViewGenero {
 
 	}*/
 
-public String nombreGenero;
-	
+	public String nombreGenero;	
 	public String pist1;
-	public static String opcion;
+	public static char opcion;
 	public static void elegirGenero(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Nombre de Género\n");
 		Scanner entrada=new Scanner(System.in);
@@ -31,33 +31,39 @@ public String nombreGenero;
 		System.out.println("Regresar al menu__  R");
 		System.out.println("salir de la aplicacion__  S\n");
 		System.out.println("Elige una opcion:");
-		opcion=entrada.nextLine();
+		
+		try {
+			opcion = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  
 				
 		switch (opcion){
-		case "1":			
+		case '1':			
 			mostrarPista();
 			break;
-		case "2":			
+		case '2':			
 			System.out.println(" ");
 			mostrarPista();
 			break;
-		case "3":
+		case '3':
 			System.out.println(" ");
 			mostrarPista();
 			break;
-		case "4":
+		case '4':
 			mostrarPista();
 			break;
-		case "r":
+		case 'r':
 			Musica men=new Musica();
 			men.music();
 			break;
-		case "s":
+		case 's':
 			System.exit(0);
 			break;
 		default:
 			System.out.println(" ");
-			System.out.println("La eleccion no es correcta vuelve a elegir");
+		//	System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");
 			elegirGenero();
 		}

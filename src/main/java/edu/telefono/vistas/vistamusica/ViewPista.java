@@ -1,5 +1,6 @@
 package edu.telefono.vistas.vistamusica;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 import edu.telefono.musica.Artista;
@@ -15,7 +16,7 @@ public class ViewPista {
 		// TODO Auto-generated method stub
 
 	}*/
-public static String opcion2;
+public static char opcion2;
 
 	
 	public static void seleccionarPista(){
@@ -23,10 +24,10 @@ public static String opcion2;
 		
 		Scanner entrada=new Scanner(System.in);	
 		ViewGenero pis=new ViewGenero();
-		String result=pis.opcion;
+		char result=pis.opcion;
 				
 		
-		if(result.equals("1")){
+		if(result==('1')){
 			System.out.println(titulo);
 			System.out.println("Seleccione la musica del género Jazz");
 			System.out.println(" ");
@@ -39,32 +40,37 @@ public static String opcion2;
 			System.out.println("Regresar al menu__  R");
 			System.out.println("salir de la aplicacion__  S\n");
 			System.out.println("Elige una Opción:");
-			opcion2=entrada.nextLine();
+			try {
+				opcion2 = (char)System.in.read();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			switch (opcion2){
-			case "1":
+			case '1':
 				System.out.println("Reproduciendo Tema Todos quiren ser ya gatos");
 				break;
-			case "2":
+			case '2':
 				System.out.println("Reproduciendo Tema Barrial de el bordo");
 				break;
-			case "3":
+			case '3':
 				System.out.println("Reproduciendo Tema Violadores de verso");
 				break;
-			case "4":
+			case '4':
 				System.out.println("Reproduciendo Tema Catherine Jeta Jones");
 				break;
-			case "r":
+			case 'r':
 				Musica men=new Musica();
 				men.music();
 				break;
-			case "s":
+			case 's':
 				System.exit(0);
 				break;
 			default:
 				seleccionarPista();
 			}
 			
-		}else if(result.equals("2")){
+		}else if(result==('2')){
 			System.out.println(titulo);
 			System.out.println("Seleccione la musica del género clásico");
 			System.out.println(" ");
@@ -77,32 +83,37 @@ public static String opcion2;
 			System.out.println("Regresar al menu__  R");
 			System.out.println("salir de la aplicacion__  S\n");
 			System.out.println("Elige una Opción:");
-			opcion2=entrada.nextLine();
+			try {
+				opcion2 = (char)System.in.read();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			switch (opcion2){
-			case "1":
+			case '1':
 				System.out.println("Reproduciendo Tema Mozart");
 				break;
-			case "2":
+			case '2':
 				System.out.println("Reproduciendo Tema Bethoven");
 				break;
-			case "3":
+			case '3':
 				System.out.println("Reproduciendo Tema Bach");
 				break;
-			case "4":
+			case '4':
 				System.out.println("Reproduciendo Tema Glenn");
 				break;
-			case "r":
+			case 'r':
 				Musica men=new Musica();
 				men.music();
 				break;
-			case "s":
+			case 's':
 				System.exit(0);
 				break;
 			default:
 				seleccionarPista();
 			}
 			
-		}else if(result.equals("3")){
+		}else if(result==('3')){
 			System.out.println(titulo);
 			System.out.println("Seleccione la musica del género pop");
 			System.out.println(" ");
@@ -115,32 +126,37 @@ public static String opcion2;
 			System.out.println("Regresar al menu__  R");
 			System.out.println("salir de la aplicacion__  S\n");
 			System.out.println("Elige una Opción:");
-			opcion2=entrada.nextLine();
+			try {
+				opcion2 = (char)System.in.read();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			switch (opcion2){
-			case "1":
+			case '1':
 				System.out.println("Reproduciendo Tema Yo no se mañana");
 				break;
-			case "2":
+			case '2':
 				System.out.println("Reproduciendo Tema Contigo");
 				break;
-			case "3":
+			case '3':
 				System.out.println("Reproduciendo Tema Daria la vida Por Ti");
 				break;
-			case "4":
+			case '4':
 				System.out.println("Reproduciendo Tema Te quiero");
 				break;
-			case "r":
+			case 'r':
 				Musica men=new Musica();
 				men.music();
 				break;
-			case "s":
+			case 's':
 				System.exit(0);
 				break;
 			default:
 				seleccionarPista();
 			}
 			
-		}else if(result.equals("4")){
+		}else if(result==('4')){
 			System.out.println(titulo);
 			System.out.println("Seleccione la musica del género rock");
 			System.out.println(" ");
@@ -153,34 +169,39 @@ public static String opcion2;
 			System.out.println("Regresar al menu__  R");
 			System.out.println("salir de la aplicacion__  S\n");
 			System.out.println("Elige una Opción:");
-			opcion2=entrada.nextLine();
+			try {
+				opcion2 = (char)System.in.read();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			switch (opcion2){
-			case "1":
+			case '1':
 				System.out.println("Reproduciendo Tema The Jonas Brother");
 				break;
-			case "2":
+			case '2':
 				System.out.println("Reproduciendo Tema Mancha de Rolando");
 				break;
-			case "3":
+			case '3':
 				System.out.println("Reproduciendo Tema That Body de Black Eyed Peas");
 				break;
-			case "4":
+			case '4':
 				System.out.println("Reproduciendo Tema Roll Train");
 				break;
-			case "r":
+			case 'r':
 				Musica men=new Musica();
 				men.music();
 				break;
-			case "s":
+			case 's':
 				System.exit(0);
 				break;
 			default:
 				seleccionarPista();
 			}
 			
-		}else if(result.equals("r")){
+		}else if(result==('r')){
 			
-		}else if(result.equals("s")){
+		}else if(result==('s')){
 			
 		}else {
 			return;
@@ -195,9 +216,9 @@ public static String opcion2;
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n (Busqueda por Artista)\n");
 		Scanner entrada=new Scanner(System.in);
 		ViewArtista art=new ViewArtista();
-		String result2=art.opcion;
+		char result2=art.opcion;
 		
-		if(result2.equals("1")){
+		if(result2==('1')){
 		System.out.println(titulo);
 		System.out.println("Seleccione la musica del artista Alejandro Fernández");
 		System.out.println(" ");
@@ -210,32 +231,37 @@ public static String opcion2;
 		System.out.println("Regresar al menu__  R");
 		System.out.println("salir de la aplicacion__  S\n");
 		System.out.println("Elige una Opción:");
-		opcion2=entrada.nextLine();
+		try {
+			opcion2 = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		switch (opcion2){
-		case "1":
+		case '1':
 			System.out.println("Reproduciendo Tema Vuelve a mi");
 			break;
-		case "2":
+		case '2':
 			System.out.println("Reproduciendo Tema Abrázame");
 			break;
-		case "3":
+		case '3':
 			System.out.println("Reproduciendo Tema Canta Corazón");
 			break;
-		case "4":
+		case '4':
 			System.out.println("Reproduciendo Tema Te voy a perder");
 			break;
-		case "r":
+		case 'r':
 			Musica men=new Musica();
 			men.music();
 			break;
-		case "s":
+		case 's':
 			System.exit(0);
 			break;
 		default:
 			seleccionarPistaArt();
 		}
 		
-	}else if(result2.equals("2")){
+	}else if(result2==('2')){
 		System.out.println(titulo);
 		System.out.println("Seleccione la musica del artista Nigga");
 		System.out.println(" ");
@@ -248,32 +274,37 @@ public static String opcion2;
 		System.out.println("Regresar al menu__  R");
 		System.out.println("salir de la aplicacion__  S\n");
 		System.out.println("Elige una Opción:");
-		opcion2=entrada.nextLine();
+		try {
+			opcion2 = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		switch (opcion2){
-		case "1":
+		case '1':
 			System.out.println("Reproduciendo Tema Te quiero");
 			break;
-		case "2":
+		case '2':
 			System.out.println("Reproduciendo Tema luna dile");
 			break;
-		case "3":
+		case '3':
 			System.out.println("Reproduciendo Tema Ella la que me pudo enamorar");
 			break;
-		case "4":
+		case '4':
 			System.out.println("Reproduciendo Tema Te extraño");
 			break;
-		case "r":
+		case 'r':
 			Musica men=new Musica();
 			men.music();
 			break;
-		case "s":
+		case 's':
 			System.exit(0);
 			break;
 		default:
 			seleccionarPistaArt();
 		}
 		
-	}else if(result2.equals("3")){
+	}else if(result2==('3')){
 		System.out.println(titulo);
 		System.out.println("Seleccione la musica del artista Komander");
 		System.out.println(" ");
@@ -286,32 +317,37 @@ public static String opcion2;
 		System.out.println("Regresar al menu__  R");
 		System.out.println("salir de la aplicacion__  S\n");
 		System.out.println("Elige una Opción:");
-		opcion2=entrada.nextLine();
+		try {
+			opcion2 = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		switch (opcion2){
-		case "1":
+		case '1':
 			System.out.println("Reproduciendo tema Tragos de amargo licor");
 			break;
-		case "2":
+		case '2':
 			System.out.println("Reproduciendo Tema mi niño");
 			break;
-		case "3":
+		case '3':
 			System.out.println("Reproduciendo Tema pleabada 30-30");
 			break;
-		case "4":
+		case '4':
 			System.out.println("Reproduciendo Tema Amanecer sin ti");
 			break;
-		case "r":
+		case 'r':
 			Musica men=new Musica();
 			men.music();
 			break;
-		case "s":
+		case 's':
 			System.exit(0);
 			break;
 		default:
 			seleccionarPistaArt();
 		}
 		
-	}else if(result2.equals("4")){
+	}else if(result2==('4')){
 		System.out.println(titulo);
 		System.out.println("Seleccione la musica del artista Pedro Fernández");
 		System.out.println(" ");
@@ -324,34 +360,39 @@ public static String opcion2;
 		System.out.println("Regresar al menu__  R");
 		System.out.println("salir de la aplicacion__  S\n");
 		System.out.println("Elige una Opción");
-		opcion2=entrada.nextLine();
+		try {
+			opcion2 = (char)System.in.read();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		switch (opcion2){
-		case "1":
+		case '1':
 			System.out.println("Reproduciendo Tema Dime mi amor");
 			break;
-		case "2":
+		case '2':
 			System.out.println("Reproduciendo Tema Ay corazon");
 			break;
-		case "3":
+		case '3':
 			System.out.println("Reproduciendo Tema Amarte a la antigua");
 			break;
-		case "4":
+		case '4':
 			System.out.println("Reproduciendo Tema Un mundo Raro");
 			break;
-		case "r":
+		case 'r':
 			Musica men=new Musica();
 			men.music();
 			break;
-		case "s":
+		case 's':
 			System.exit(0);
 			break;
 		default:
 			seleccionarPistaArt();
 		}
 		
-	}else if(result2.equals("r")){
+	}else if(result2==('r')){
 		
-	}else if(result2.equals("s")){
+	}else if(result2==('s')){
 		
 	}else{
 		return;
