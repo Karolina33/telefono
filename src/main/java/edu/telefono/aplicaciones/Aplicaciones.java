@@ -12,13 +12,11 @@ import edu.telefono.vistas.vistamensaje.*;
 import edu.telefono.vistas.vistamusica.*;
 
 
-
-
-
 public class Aplicaciones {
 
 	public void menuPrincipal() {
-
+try {
+	
 		Scanner read = new Scanner(System.in);
 		int op = 0;
 
@@ -40,6 +38,7 @@ public class Aplicaciones {
 
 				VistaCalculadora calculadora = new VistaCalculadora();
 				calculadora.mostrarMenu();
+
 			} else if (op == 3) {
 
 				ViewMusica viewMusica = new ViewMusica();
@@ -57,10 +56,13 @@ public class Aplicaciones {
 				System.out.println("Gracias por utilizar la aplicacion");
 			} else {
 				System.out.println("ERROR, por favor escriba bien");
+			
 			}
 
 		} while (op != 6);
-
+	} catch (Exception e) {
+		System.out.println("no se aceptan letras solo numeros !!!!!!!!");
+	}
 	}
 
 }
