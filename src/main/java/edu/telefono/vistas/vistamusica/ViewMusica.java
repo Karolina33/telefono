@@ -16,7 +16,7 @@ public class ViewMusica {
 	public static char opcion;
 	
 		
-public static void menuPrincipal(){
+public void menuPrincipal(){
 		
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Tipo de Busqueda\n");
 		Scanner entrada=new Scanner(System.in);
@@ -58,24 +58,24 @@ public static void menuPrincipal(){
 		
 	}
 	
-	public static void buscarGenero(){
+	public  void buscarGenero(){
 		ViewGenero genero=new ViewGenero();
 		genero.elegirGenero();
 					
 	}
 	
-	public static void buscarArtista(){
+	public void buscarArtista(){
 		ViewArtista artista=new ViewArtista();
 		artista.elegirArtista();
 				
 	}
 	
-	public static void salir(){
+	public  void salir(){
 		Aplicaciones apli=new Aplicaciones();
 		apli.menuPrincipal();
 	}
 	
-	public static void regresarMenuPrincipal(){
+	public  void regresarMenuPrincipal(){
 		menuPrincipal();				
 	}	
 

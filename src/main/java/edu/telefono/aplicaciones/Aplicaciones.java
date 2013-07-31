@@ -7,6 +7,7 @@ import edu.telefono.musica.Musica;
 import edu.telefono.aplicaciones.*;
 import edu.telefono.vistas.vistaarchivo.*;
 import edu.telefono.calculadora.*;
+import edu.telefono.vistas.vistacalculadora.*;
 import edu.telefono.mensaje.*;
 import edu.telefono.archivo.*;
 import edu.telefono.vistas.vistacontacto.*;
@@ -35,8 +36,8 @@ public class Aplicaciones {
 
 			else if (op == 2) {
 
-				Calculadora calculadora = new Calculadora();
-				calculadora.Suma();
+				VistaCalculadora calculadora = new VistaCalculadora();
+				calculadora.mostrarMenu();
 			} else if (op == 3) {
 
 				Musica musica = new Musica();
