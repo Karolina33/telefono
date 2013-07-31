@@ -17,6 +17,7 @@ public class Telefono {
 	}
 	
 	 public void menuPrincipal(){
+		 try{
 		Scanner read = new Scanner(System.in);
 		int op = 0;
 
@@ -33,13 +34,20 @@ public class Telefono {
 			}
 
 			else if (op == 2) {
-				System.out.println("Gracias por utilizar la aplicación");
+				System.out.println("Gracias por utilizar la aplicacion");
 				// ejecutar el Programa Dos
 			} else {
 				System.out.println("ERROR, por favor escriba bien");
 			}
 
 		} while (op != 2);
+			} catch (Exception e) {
+				System.out.println("no se aceptan letras solo numeros!!!");
+				Telefono telefono = new Telefono();
+				telefono.menuPrincipal();
+			}
+		 
+		
 	}
 
 

@@ -10,12 +10,14 @@ import edu.telefono.calculadora.*;
 import edu.telefono.mensaje.*;
 import edu.telefono.archivo.*;
 import edu.telefono.vistas.vistacontacto.*;
+import edu.telefono.vistas.vistacalculadora.*;
 
 
 public class Aplicaciones {
 
 	public void menuPrincipal() {
-
+try {
+	
 		Scanner read = new Scanner(System.in);
 		int op = 0;
 
@@ -24,7 +26,7 @@ public class Aplicaciones {
 			System.out.println("1. Contacto " + "\n2. Calculadora"
 					+ "\n3. Musica" + "\n4. Enviar SMS"
 					+ "\n5. Enviar Archivos" + "\n6. Salir");
-			System.out.println("Elija una opción");
+			System.out.println("Elija una opcion");
 
 			op = read.nextInt();
 
@@ -35,8 +37,8 @@ public class Aplicaciones {
 
 			else if (op == 2) {
 
-				Calculadora calculadora = new Calculadora();
-				calculadora.Suma();
+				VistaCalculadora vistaCalculadora = new VistaCalculadora();
+				vistaCalculadora.main(null);
 			} else if (op == 3) {
 
 				Musica musica = new Musica();
@@ -51,13 +53,16 @@ public class Aplicaciones {
 				viewFiles.Menu();
 
 			} else if (op == 6) {
-				System.out.println("Gracias por utilizar la aplicación");
+				System.out.println("Gracias por utilizar la aplicacion");
 			} else {
 				System.out.println("ERROR, por favor escriba bien");
+			
 			}
 
 		} while (op != 6);
-
+	} catch (Exception e) {
+		System.out.println("no se aceptan letras solo numeros !!!!!!!!");
+	}
 	}
 
 }
