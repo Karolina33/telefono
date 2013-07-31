@@ -22,9 +22,9 @@ public class ViewArtista {
 
 	}*/
 	public String nombreArtista;
-	public static char opcion;
+	public  static char opcion;
 	
-	public static void elegirArtista(){
+	public  static void elegirArtista(){
 				
 	    String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir el Nombre del Artista2\n");
 		//Scanner entrada=new Scanner(System.in);

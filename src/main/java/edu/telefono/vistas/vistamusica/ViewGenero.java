@@ -18,8 +18,8 @@ public class ViewGenero {
 
 	public String nombreGenero;	
 	public String pist1;
-	public  char opcion;
-	public  void elegirGenero(){
+	public   static char opcion;
+	public   static void elegirGenero(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Nombre de Género\n");
 		Scanner entrada=new Scanner(System.in);
 		System.out.println(titulo);
@@ -73,7 +73,7 @@ public class ViewGenero {
 	}
 	
 	
-	public  void mostrarPista(){
+	public static void mostrarPista(){
 				
 		ViewPista pista=new ViewPista();
 		pista.seleccionarPista();

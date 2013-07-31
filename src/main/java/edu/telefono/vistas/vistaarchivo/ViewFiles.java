@@ -18,7 +18,7 @@ public class ViewFiles {
 			teclado = new Scanner(System.in);
 			
 		try {
-			System.out.println("Intoduzca una opción:");
+			System.out.println("Intoduzca una opcion:");
 			System.out.println("1. Agregar ruta");
 			System.out.println("R. Regresar al menu principal");
 			System.out.println("S. Salir");

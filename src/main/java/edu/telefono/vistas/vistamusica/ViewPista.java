@@ -17,8 +17,8 @@ public class ViewPista {
 		// TODO Auto-generated method stub
 
 	}*/
-public char opcion2;
-public static char  opcion3;
+	public char opcion2;
+	//public char  opcion3;
 
 	
 	public void seleccionarPista(){
@@ -212,7 +212,7 @@ public static char  opcion3;
 	}
 	
 	
-	public static void seleccionarPistaArt(){
+	public  void seleccionarPistaArt(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n (Busqueda por Artista)\n");
 		Scanner entrada=new Scanner(System.in);
 		Aplicaciones apli=new Aplicaciones();
@@ -234,12 +234,12 @@ public static char  opcion3;
 		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción:");
 		try {
-			opcion3 = (char)System.in.read();
+			opcion2 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion3){
+		switch (opcion2){
 		case '1':
 			System.out.println("Reproduciendo Tema Vuelve a mi");
 			break;
@@ -276,12 +276,12 @@ public static char  opcion3;
 		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción:");
 		try {
-			opcion3 = (char)System.in.read();
+			opcion2 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion3){
+		switch (opcion2){
 		case '1':
 			System.out.println("Reproduciendo Tema Te quiero");
 			break;
@@ -318,12 +318,12 @@ public static char  opcion3;
 		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción:");
 		try {
-			opcion3 = (char)System.in.read();
+			opcion2 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion3){
+		switch (opcion2){
 		case '1':
 			System.out.println("Reproduciendo tema Tragos de amargo licor");
 			break;
@@ -360,12 +360,12 @@ public static char  opcion3;
 		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción");
 		try {
-			opcion3 = (char)System.in.read();
+			opcion2 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion3){
+		switch (opcion2){
 		case '1':
 			System.out.println("Reproduciendo Tema Dime mi amor");
 			break;
