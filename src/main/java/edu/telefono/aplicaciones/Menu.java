@@ -38,6 +38,7 @@ public class Menu {
 				// ejecutar el Programa Dos
 			} else if (op == 5) {
 				// ejecutar el Programa Dos
+				ViewFiles.main(null);
 			} else if (op == 6) {
 				System.out.println("Gracias por utilizar la aplicación");
 			} else {
