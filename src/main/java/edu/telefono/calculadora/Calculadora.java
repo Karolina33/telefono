@@ -11,7 +11,7 @@ import java.io.InputStreamReader;
 public class Calculadora {
 
   	// Metodo Sumar
-		private void Suma() {
+		public void Suma() {
 			try {
 				float sumar;
 				
@@ -61,7 +61,7 @@ public class Calculadora {
 		}
 
 		// Metodo Restar
-		private void Resta() {
+		public void Resta() {
 			
 			try {
 				float resultado;
@@ -113,7 +113,7 @@ public class Calculadora {
 		}
 
 		// Metodo Multiplicar
-		private void Multiplicacion() {
+		public void Multiplicacion() {
 			try {
 				float resultado;
 				
@@ -164,7 +164,7 @@ public class Calculadora {
 
 
 		// Metodo Dividir
-		private void Division() {
+		public void Division() {
 			try {
 				float resultado;
 				
@@ -222,7 +222,7 @@ public class Calculadora {
 		}
 		
 		// Metodo Raiz
-		private void Raiz() {
+		public void Raiz() {
 			try {
 				double raiz;
 
@@ -244,7 +244,7 @@ public class Calculadora {
 		
 		
 		// Metodo Regresar
-		private void Regresar(){
+		public void Regresar(){
 				
 			try {
 				System.out.println("\n\tRegresar menú principal: R");
@@ -275,7 +275,7 @@ public class Calculadora {
 	
 	// Metodo Coseno
 	
-	private void Coseno() {
+	public void Coseno() {
 		try {
 			double coseno;
 
@@ -296,7 +296,7 @@ public class Calculadora {
 	}
 
 	// Metodo Seno
-	private void Seno() {
+	public void Seno() {
 
 		try {
 			double seno;
@@ -320,7 +320,7 @@ public class Calculadora {
 
 
 	// Metodo Limpiar
-	private void Limpiar(){
+	public void Limpiar(){
 		int saltos = 10; 
 		for(int i = 0; i < saltos; i++){ 
 		System.out.println(); 
