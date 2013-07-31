@@ -1,11 +1,14 @@
-package edu.telefono.vistas.vistaaplicaciones;
+package edu.telefono.aplicaciones;
 
 import java.util.Scanner;
 
 import edu.telefono.musica.Musica;
-import edu.telefono.vistas.vistaaplicaciones.Telefono;
+///import edu.telefono.vistas.vistaaplicaciones.Telefono;
 import edu.telefono.aplicaciones.*;
 import edu.telefono.vistas.vistaarchivo.*;
+import edu.telefono.calculadora.*;
+import edu.telefono.mensaje.*;
+import edu.telefono.archivo.*;
 
 
 public class Aplicaciones {
@@ -34,16 +37,16 @@ public class Aplicaciones {
 			else if (op == 2) {
 				
 				Calculadora calculadora = new Calculadora();
-				calculadora.menu();
+				calculadora.Suma();
 			} else if (op == 3) {
 
 				Musica musica = new Musica();
-				musica.menuPrincipal();
+				musica.music();
 				
 				
 			} else if (op == 4) {
 				EscribirSms escribirSms = new EscribirSms();
-				escribirSms.enviandoMensaje ();
+				escribirSms.enviandoMensaje(null);
 				
 			} else if (op == 5) {
 				EnviarArchivo enviarArchivo = new EnviarArchivo();

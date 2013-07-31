@@ -1,8 +1,8 @@
-package edu.telefono.vistas.vistaaplicaciones;
+package edu.telefono.aplicaciones;
 
 
 import java.util.Scanner;
-import edu.telefono.vistas.vistaaplicaciones.Aplicaciones;
+import edu.telefono.aplicaciones.*;
 
 
 public class Telefono {
@@ -16,7 +16,7 @@ public class Telefono {
 		
 	}
 	
-	 void menuPrincipal(){
+	 public void menuPrincipal(){
 		Scanner read = new Scanner(System.in);
 		int op = 0;
 
