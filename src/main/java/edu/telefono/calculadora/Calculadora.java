@@ -258,7 +258,7 @@ public class Calculadora {
 				case 'R':
 				case 'r':
 					this.Limpiar();
-					this.Menu();
+					VistaCalculadora.main(null);
 					break;
 				case 'S':
 				case 's':
