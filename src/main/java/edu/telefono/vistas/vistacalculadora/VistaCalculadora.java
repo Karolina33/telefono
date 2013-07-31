@@ -3,7 +3,7 @@ package edu.telefono.vistas.vistacalculadora;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import calculadora.Calculadora;
+import edu.telefono.calculadora.Calculadora;
 
 public class VistaCalculadora {
 
