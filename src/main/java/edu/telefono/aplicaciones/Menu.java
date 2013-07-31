@@ -3,6 +3,7 @@ package edu.telefono.aplicaciones;
 import java.util.Scanner;
 import edu.telefono.aplicaciones.*;
 import edu.telefono.musica.Musica;
+import edu.telefono.vistas.vistacalculadora.VistaCalculadora;
 
 public class Menu {
 
