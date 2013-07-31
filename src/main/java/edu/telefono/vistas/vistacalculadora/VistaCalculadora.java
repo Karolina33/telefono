@@ -22,6 +22,7 @@ public class VistaCalculadora {
 				System.out.println("\t5\tRaiz Cuadrada");
 				System.out.println("\t6\tSeno");
 				System.out.println("\t7\tCoseno");
+				System.out.println("\t8\tRegresar al menu");
 				System.out.println("\nElija una opcion:");
 				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 				String frase = new String(br.readLine());
@@ -49,6 +50,10 @@ public class VistaCalculadora {
 				case 7:
 					calc.Coseno();
 					break;
+				case 8:
+					Menu menu = new Menu();
+					menu.mostrarMenu();
+					break;	
 				default:
 					System.out.println("Opcion incorrecta");
 					break;
