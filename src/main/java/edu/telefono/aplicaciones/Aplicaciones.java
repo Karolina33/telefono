@@ -9,7 +9,7 @@ import edu.telefono.vistas.vistaarchivo.*;
 import edu.telefono.calculadora.*;
 import edu.telefono.mensaje.*;
 import edu.telefono.archivo.*;
-
+import edu.telefono.vistas.vistacontacto.*;
 
 public class Aplicaciones {
 	
@@ -30,8 +30,8 @@ public class Aplicaciones {
 			op = read.nextInt();
 
 			if (op == 1) {
-				//Contacto contacto = new Contacto();
-				//contacto.mostarcontacto();
+				VistaContacto vistaContacto = new VistaContacto();
+				vistaContacto.vistacontacto();
 			}
 
 			else if (op == 2) {
@@ -49,8 +49,8 @@ public class Aplicaciones {
 				escribirSms.enviandoMensaje(null);
 				
 			} else if (op == 5) {
-				EnviarArchivo enviarArchivo = new EnviarArchivo();
-				enviarArchivo.enviandoArchivo();
+				ViewFiles viewFiles = new ViewFiles();
+			//	viewFiles.Menu();
 				
 			} else if (op == 6) {
 				System.out.println("Gracias por utilizar la aplicación");
