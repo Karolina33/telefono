@@ -21,7 +21,7 @@ public class Telefono {
 		int op = 0;
 
 		do {
-			System.out.println("Menú Principal");
+			System.out.println("Menu Principal");
 			System.out.println("1. Aplicaciones" + "\n2. Salir");
 
 			op = read.nextInt();
