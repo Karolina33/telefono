@@ -4,15 +4,19 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import edu.telefono.aplicaciones.Menu;
-import edu.telefono.aplicaciones.Telefono;
+import java.util.Scanner;
+
+import edu.telefono.aplicaciones.Aplicaciones;
 import edu.telefono.archivo.EnviarArchivo;
-import edu.telefono.vistas.vistacalculadora.VistaCalculadora;
 
 public class ViewFiles {
 
-	public static void main(String a[]) {
+	private static Scanner teclado;
+	
+	public void Menu() {
 			EnviarArchivo enviar = new EnviarArchivo();
+			teclado = new Scanner(System.in);
+			
 		try {
 			System.out.println("Intoduzca una opción:");
 			System.out.println("1. Agregar ruta");
@@ -25,13 +29,14 @@ public class ViewFiles {
 			char opcion = frase.charAt(0);
 			switch (opcion) {
 			case '1':
-				System.out.println("Insertar Ruta");
-				enviar.enviandoArchivo("/C:/Prueba/Archivo.txt");
+				System.out.println("Insertar Ruta:");
+				String ruta = teclado.next();
+				enviar.enviandoArchivo(ruta);
 				break;
 			case 'R':
 			case 'r':
-				Menu menu = new Menu();
-				menu.mostrarMenu();
+				Aplicaciones menu = new Aplicaciones();
+				menu.menuPrincipal();
 				break;
 			case 'S':
 			case 's':
@@ -45,4 +50,5 @@ public class ViewFiles {
 			e.printStackTrace(); 
 		}
 	}
+	
 }

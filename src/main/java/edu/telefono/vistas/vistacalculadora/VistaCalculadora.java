@@ -3,7 +3,7 @@ package edu.telefono.vistas.vistacalculadora;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-import edu.telefono.aplicaciones.Menu;
+import edu.telefono.aplicaciones.Aplicaciones;
 import edu.telefono.calculadora.Calculadora;
 
 public class VistaCalculadora {
@@ -52,8 +52,8 @@ public class VistaCalculadora {
 					calc.Coseno();
 					break;
 				case 8:
-					Menu menu = new Menu();
-					menu.mostrarMenu();
+					Aplicaciones menu = new Aplicaciones();
+					menu.menuPrincipal();
 					break;	
 				default:
 					System.out.println("Opcion incorrecta");

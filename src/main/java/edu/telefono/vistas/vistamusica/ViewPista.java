@@ -3,6 +3,7 @@ package edu.telefono.vistas.vistamusica;
 import java.io.IOException;
 import java.util.Scanner;
 
+import edu.telefono.aplicaciones.Aplicaciones;
 import edu.telefono.musica.Artista;
 import edu.telefono.musica.Genero;
 import edu.telefono.musica.Musica;
@@ -21,6 +22,7 @@ public static char opcion2;
 	
 	public static void seleccionarPista(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n (Busqueda por Género)\n");
+		Aplicaciones apli=new Aplicaciones();
 		
 		Scanner entrada=new Scanner(System.in);	
 		ViewGenero pis=new ViewGenero();
@@ -60,11 +62,10 @@ public static char opcion2;
 				System.out.println("Reproduciendo Tema Catherine Jeta Jones");
 				break;
 			case 'r':
-				Musica men=new Musica();
-				men.music();
+				pis.elegirGenero();
 				break;
-			case 's':
-				System.exit(0);
+			case 's':				
+				apli.menuPrincipal();
 				break;
 			default:
 				seleccionarPista();
@@ -103,11 +104,10 @@ public static char opcion2;
 				System.out.println("Reproduciendo Tema Glenn");
 				break;
 			case 'r':
-				Musica men=new Musica();
-				men.music();
+				pis.elegirGenero();
 				break;
 			case 's':
-				System.exit(0);
+				apli.menuPrincipal();
 				break;
 			default:
 				seleccionarPista();
@@ -146,11 +146,10 @@ public static char opcion2;
 				System.out.println("Reproduciendo Tema Te quiero");
 				break;
 			case 'r':
-				Musica men=new Musica();
-				men.music();
+				pis.elegirGenero();
 				break;
 			case 's':
-				System.exit(0);
+				apli.menuPrincipal();
 				break;
 			default:
 				seleccionarPista();
@@ -189,11 +188,10 @@ public static char opcion2;
 				System.out.println("Reproduciendo Tema Roll Train");
 				break;
 			case 'r':
-				Musica men=new Musica();
-				men.music();
+				pis.elegirGenero();
 				break;
 			case 's':
-				System.exit(0);
+				apli.menuPrincipal();
 				break;
 			default:
 				seleccionarPista();
@@ -212,10 +210,13 @@ public static char opcion2;
 		
 	}
 	
+	
 	public static void seleccionarPistaArt(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n (Busqueda por Artista)\n");
 		Scanner entrada=new Scanner(System.in);
+		Aplicaciones apli=new Aplicaciones();
 		ViewArtista art=new ViewArtista();
+		
 		char result2=art.opcion;
 		
 		if(result2==('1')){
@@ -251,11 +252,10 @@ public static char opcion2;
 			System.out.println("Reproduciendo Tema Te voy a perder");
 			break;
 		case 'r':
-			Musica men=new Musica();
-			men.music();
+			art.elegirArtista();
 			break;
 		case 's':
-			System.exit(0);
+			apli.menuPrincipal();
 			break;
 		default:
 			seleccionarPistaArt();
@@ -294,11 +294,10 @@ public static char opcion2;
 			System.out.println("Reproduciendo Tema Te extraño");
 			break;
 		case 'r':
-			Musica men=new Musica();
-			men.music();
+			art.elegirArtista();
 			break;
 		case 's':
-			System.exit(0);
+			apli.menuPrincipal();
 			break;
 		default:
 			seleccionarPistaArt();
@@ -337,11 +336,10 @@ public static char opcion2;
 			System.out.println("Reproduciendo Tema Amanecer sin ti");
 			break;
 		case 'r':
-			Musica men=new Musica();
-			men.music();
+			art.elegirArtista();
 			break;
 		case 's':
-			System.exit(0);
+			apli.menuPrincipal();
 			break;
 		default:
 			seleccionarPistaArt();
@@ -380,11 +378,10 @@ public static char opcion2;
 			System.out.println("Reproduciendo Tema Un mundo Raro");
 			break;
 		case 'r':
-			Musica men=new Musica();
-			men.music();
+			art.elegirArtista();
 			break;
 		case 's':
-			System.exit(0);
+			apli.menuPrincipal();
 			break;
 		default:
 			seleccionarPistaArt();
