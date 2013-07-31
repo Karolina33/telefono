@@ -15,7 +15,6 @@ public class ViewFiles {
 			EnviarArchivo enviar = new EnviarArchivo();
 		try {
 			System.out.println("Intoduzca una opción:");
-			// System.out.println ("---------------------");
 			System.out.println("1. Agregar ruta");
 			System.out.println("R. Regresar al menu principal");
 			System.out.println("S. Salir");
@@ -43,7 +42,7 @@ public class ViewFiles {
 			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 	}
 }
