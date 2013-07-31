@@ -25,7 +25,7 @@ public class EnviarArchivo {
 	  
 
 	  
-		String urlDelServicio = "http://localhost:8080/generador-encuestas/resolver/send/file";
+		String urlDelServicio = "http://10.100.96.171:8080/generador-encuestas/resolver/send/file";
 		//String urlDelArchivoDelSistema = "/C:/Prueba/Archivo.txt";
 		
 		String urlDelArchivoDelSistema =ruta ;
