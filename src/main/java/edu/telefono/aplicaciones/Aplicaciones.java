@@ -2,15 +2,14 @@ package edu.telefono.aplicaciones;
 
 import java.util.Scanner;
 
-import edu.telefono.musica.Musica;
+
 ///import edu.telefono.vistas.vistaaplicaciones.Telefono;
-import edu.telefono.aplicaciones.*;
+
 import edu.telefono.vistas.vistaarchivo.*;
-import edu.telefono.calculadora.*;
-import edu.telefono.mensaje.*;
-import edu.telefono.archivo.*;
-import edu.telefono.vistas.vistacontacto.*;
 import edu.telefono.vistas.vistacalculadora.*;
+import edu.telefono.vistas.vistacontacto.*;
+import edu.telefono.vistas.vistamensaje.*;
+import edu.telefono.vistas.vistamusica.*;
 
 
 public class Aplicaciones {
@@ -37,16 +36,17 @@ try {
 
 			else if (op == 2) {
 
-				VistaCalculadora vistaCalculadora = new VistaCalculadora();
-				vistaCalculadora.main(null);
+				VistaCalculadora calculadora = new VistaCalculadora();
+				calculadora.mostrarMenu();
+
 			} else if (op == 3) {
 
-				Musica musica = new Musica();
-				musica.music();
+				ViewMusica viewMusica = new ViewMusica();
+				viewMusica.menuPrincipal();
 
 			} else if (op == 4) {
-				EscribirSms escribirSms = new EscribirSms();
-				escribirSms.enviandoMensaje(null);
+				VistaMensaje vistaMensaje = new VistaMensaje();
+				vistaMensaje.vistamensaje();
 
 			} else if (op == 5) {
 				ViewFiles viewFiles = new ViewFiles();

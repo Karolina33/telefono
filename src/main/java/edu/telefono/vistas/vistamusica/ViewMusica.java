@@ -16,7 +16,7 @@ public class ViewMusica {
 	public static char opcion;
 	
 		
-public static void menuPrincipal(){
+public void menuPrincipal(){
 		
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Tipo de Busqueda\n");
 		Scanner entrada=new Scanner(System.in);
@@ -24,8 +24,8 @@ public static void menuPrincipal(){
 		System.out.println("1.  Busqueda Por Genero");
 		System.out.println("2.  Busqueda Por Artista ");
 		System.out.println("   ");
-		System.out.println("Regresar al Menú Principal__  R");
-		System.out.println("salir de la aplicación__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("  Elige una Opción: ");
 		//opcion = entrada.nextLine();
 		
@@ -51,31 +51,31 @@ public static void menuPrincipal(){
 			break;
 		default:
 			System.out.println(" ");
-		//	System.out.println("La eleccion no es correcta vuelve a elegir");
+			System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");			
 			regresarMenuPrincipal();
 		}
 		
 	}
 	
-	public static void buscarGenero(){
+	public  void buscarGenero(){
 		ViewGenero genero=new ViewGenero();
 		genero.elegirGenero();
 					
 	}
 	
-	public static void buscarArtista(){
+	public void buscarArtista(){
 		ViewArtista artista=new ViewArtista();
 		artista.elegirArtista();
 				
 	}
 	
-	public static void salir(){
+	public  void salir(){
 		Aplicaciones apli=new Aplicaciones();
 		apli.menuPrincipal();
 	}
 	
-	public static void regresarMenuPrincipal(){
+	public  void regresarMenuPrincipal(){
 		menuPrincipal();				
 	}	
 
