@@ -52,11 +52,12 @@ public class ViewGenero {
 			mostrarPista();
 			break;
 		case '4':
+			System.out.println(" ");
 			mostrarPista();
 			break;
 		case 'r':
-			Musica men=new Musica();
-			men.music();
+			ViewMusica mep=new ViewMusica();
+			mep.menuPrincipal();
 			break;
 		case 's':
 			System.exit(0);
