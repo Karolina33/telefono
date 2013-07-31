@@ -17,10 +17,11 @@ public class ViewPista {
 		// TODO Auto-generated method stub
 
 	}*/
-public static char opcion2;
+public char opcion2;
+public static char  opcion3;
 
 	
-	public static void seleccionarPista(){
+	public void seleccionarPista(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n (Busqueda por Género)\n");
 		Aplicaciones apli=new Aplicaciones();
 		
@@ -31,7 +32,7 @@ public static char opcion2;
 		
 		if(result==('1')){
 			System.out.println(titulo);
-			System.out.println("Seleccione la musica del género Jazz");
+			System.out.println("Elegir nombre de la canción del género Jazz");
 			System.out.println(" ");
 			System.out.println("1...Todos quiren ser ya gatos");
 			System.out.println("2...Barrial de el bordo");
@@ -39,8 +40,8 @@ public static char opcion2;
 			System.out.println("4...Catherine Jeta Jones");
 			System.out.println("   ");
 			System.out.println("   ");
-			System.out.println("Regresar al menu__  R");
-			System.out.println("salir de la aplicacion__  S\n");
+			System.out.println("Para regresar a la pantalla anterior oprimir: R");
+			System.out.println("Para salir de aplicación oprimir: S\n");
 			System.out.println("Elige una Opción:");
 			try {
 				opcion2 = (char)System.in.read();
@@ -73,7 +74,7 @@ public static char opcion2;
 			
 		}else if(result==('2')){
 			System.out.println(titulo);
-			System.out.println("Seleccione la musica del género clásico");
+			System.out.println("Elegir nombre de la canción del género clásico");
 			System.out.println(" ");
 			System.out.println("1...Mozart");
 			System.out.println("2...Beethoven");
@@ -81,8 +82,8 @@ public static char opcion2;
 			System.out.println("4...Glenn");
 			System.out.println("   ");
 			System.out.println("   ");
-			System.out.println("Regresar al menu__  R");
-			System.out.println("salir de la aplicacion__  S\n");
+			System.out.println("Para regresar a la pantalla anterior oprimir: R");
+			System.out.println("Para salir de aplicación oprimir: S\n");
 			System.out.println("Elige una Opción:");
 			try {
 				opcion2 = (char)System.in.read();
@@ -115,7 +116,7 @@ public static char opcion2;
 			
 		}else if(result==('3')){
 			System.out.println(titulo);
-			System.out.println("Seleccione la musica del género pop");
+			System.out.println("Elegir nombre de la canción del género pop");
 			System.out.println(" ");
 			System.out.println("1...yo no se mañana");
 			System.out.println("2...Contigo");
@@ -123,8 +124,8 @@ public static char opcion2;
 			System.out.println("4...te quiero");
 			System.out.println("   ");
 			System.out.println("   ");
-			System.out.println("Regresar al menu__  R");
-			System.out.println("salir de la aplicacion__  S\n");
+			System.out.println("Para regresar a la pantalla anterior oprimir: R");
+			System.out.println("Para salir de aplicación oprimir: S\n");
 			System.out.println("Elige una Opción:");
 			try {
 				opcion2 = (char)System.in.read();
@@ -157,7 +158,7 @@ public static char opcion2;
 			
 		}else if(result==('4')){
 			System.out.println(titulo);
-			System.out.println("Seleccione la musica del género rock");
+			System.out.println("Elegir nombre de la canción del género rock");
 			System.out.println(" ");
 			System.out.println("1...The Jonas Brother");
 			System.out.println("2...Mancha de Rolando");
@@ -165,8 +166,8 @@ public static char opcion2;
 			System.out.println("4...Roll Train");
 			System.out.println("   ");
 			System.out.println("   ");
-			System.out.println("Regresar al menu__  R");
-			System.out.println("salir de la aplicacion__  S\n");
+			System.out.println("Para regresar a la pantalla anterior oprimir: R");
+			System.out.println("Para salir de aplicación oprimir: S\n");
 			System.out.println("Elige una Opción:");
 			try {
 				opcion2 = (char)System.in.read();
@@ -229,16 +230,16 @@ public static char opcion2;
 		System.out.println("4...Te voy a perder");
 		System.out.println("   ");
 		System.out.println("   ");
-		System.out.println("Regresar al menu__  R");
-		System.out.println("salir de la aplicacion__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción:");
 		try {
-			opcion2 = (char)System.in.read();
+			opcion3 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion2){
+		switch (opcion3){
 		case '1':
 			System.out.println("Reproduciendo Tema Vuelve a mi");
 			break;
@@ -271,16 +272,16 @@ public static char opcion2;
 		System.out.println("4...Te extraño");
 		System.out.println("   ");
 		System.out.println("   ");
-		System.out.println("Regresar al menu__  R");
-		System.out.println("salir de la aplicacion__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción:");
 		try {
-			opcion2 = (char)System.in.read();
+			opcion3 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion2){
+		switch (opcion3){
 		case '1':
 			System.out.println("Reproduciendo Tema Te quiero");
 			break;
@@ -313,16 +314,16 @@ public static char opcion2;
 		System.out.println("4...Amanecer si ti");
 		System.out.println("   ");
 		System.out.println("   ");
-		System.out.println("Regresar al menu__  R");
-		System.out.println("salir de la aplicacion__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción:");
 		try {
-			opcion2 = (char)System.in.read();
+			opcion3 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion2){
+		switch (opcion3){
 		case '1':
 			System.out.println("Reproduciendo tema Tragos de amargo licor");
 			break;
@@ -355,16 +356,16 @@ public static char opcion2;
 		System.out.println("4...Un mundo Raro");
 		System.out.println("   ");
 		System.out.println("   ");
-		System.out.println("Regresar al menu__  R");
-		System.out.println("salir de la aplicacion__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una Opción");
 		try {
-			opcion2 = (char)System.in.read();
+			opcion3 = (char)System.in.read();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		switch (opcion2){
+		switch (opcion3){
 		case '1':
 			System.out.println("Reproduciendo Tema Dime mi amor");
 			break;

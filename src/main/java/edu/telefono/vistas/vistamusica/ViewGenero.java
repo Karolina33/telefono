@@ -18,8 +18,8 @@ public class ViewGenero {
 
 	public String nombreGenero;	
 	public String pist1;
-	public static char opcion;
-	public static void elegirGenero(){
+	public  char opcion;
+	public  void elegirGenero(){
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Nombre de Género\n");
 		Scanner entrada=new Scanner(System.in);
 		System.out.println(titulo);
@@ -28,8 +28,8 @@ public class ViewGenero {
 		System.out.println("3.  Pop ");
 		System.out.println("4.  Rock ");
 		System.out.println("   ");
-		System.out.println("Regresar al menu__  R");
-		System.out.println("salir de la aplicacion__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("Elige una opcion:");
 		
 		try {
@@ -64,7 +64,7 @@ public class ViewGenero {
 			break;
 		default:
 			System.out.println(" ");
-		//	System.out.println("La eleccion no es correcta vuelve a elegir");
+			System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");
 			elegirGenero();
 		}
@@ -73,7 +73,7 @@ public class ViewGenero {
 	}
 	
 	
-	public static void mostrarPista(){
+	public  void mostrarPista(){
 				
 		ViewPista pista=new ViewPista();
 		pista.seleccionarPista();
