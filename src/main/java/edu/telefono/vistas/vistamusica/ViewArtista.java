@@ -44,8 +44,8 @@ public class ViewArtista {
 		System.out.println("3.  Komander ");
 		System.out.println("4.  Pedro Fernández ");
 		System.out.println("   ");
-		System.out.println("Regresar al menu__  R");
-		System.out.println("salir de la aplicacion__  S");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S");
 		
 		//opcion=entrada.nextLine();
 				
@@ -72,7 +72,7 @@ public class ViewArtista {
 			break;
 		default:
 			System.out.println(" ");
-		//	System.out.println("La eleccion no es correcta vuelve a elegir");
+			System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");
 			elegirArtista();
 		}

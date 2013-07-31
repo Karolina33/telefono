@@ -24,8 +24,8 @@ public void menuPrincipal(){
 		System.out.println("1.  Busqueda Por Genero");
 		System.out.println("2.  Busqueda Por Artista ");
 		System.out.println("   ");
-		System.out.println("Regresar al Menú Principal__  R");
-		System.out.println("salir de la aplicación__  S\n");
+		System.out.println("Para regresar a la pantalla anterior oprimir: R");
+		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("  Elige una Opción: ");
 		//opcion = entrada.nextLine();
 		
@@ -51,7 +51,7 @@ public void menuPrincipal(){
 			break;
 		default:
 			System.out.println(" ");
-		//	System.out.println("La eleccion no es correcta vuelve a elegir");
+			System.out.println("La eleccion no es correcta vuelve a elegir");
 			System.out.println(" ");			
 			regresarMenuPrincipal();
 		}

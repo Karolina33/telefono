@@ -11,7 +11,7 @@ public class VistaCalculadora {
 	
 	 public void mostrarMenu(){
 				System.out.println("\t    Calculadora\n");
-				System.out.println("Elija la operación que desea realizar:");
+				System.out.println("Elija la operacion que desea realizar:");
 				System.out.println("\n\t1\tSuma");
 				System.out.println("\t2\tResta");
 				System.out.println("\t3\tMultiplicacion");
@@ -20,7 +20,7 @@ public class VistaCalculadora {
 				System.out.println("\t6\tSeno");
 				System.out.println("\t7\tCoseno");
 				System.out.println("\t8\tMenu del Telefono");
-				System.out.println("\nElija una opción:");
+				System.out.println("\nElija una opcion:");
 				opcion();
 	 }
 	 
