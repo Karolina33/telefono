@@ -248,8 +248,8 @@ public class Calculadora {
 		public void Regresar(){
 				
 			try {
-				System.out.println("\n\tRegresar menú principal: R");
-				System.out.println("\n\tSalir de aplicación oprimir: S");
+				System.out.println("\n\tRegresar menu principal: R");
+				System.out.println("\n\tSalir de aplicacion oprimir: S");
 				BufferedReader br = new BufferedReader(new InputStreamReader(
 						System.in));
 				String frase = new String(br.readLine());
