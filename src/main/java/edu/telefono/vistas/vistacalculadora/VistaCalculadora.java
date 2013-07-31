@@ -1,21 +1,17 @@
 package edu.telefono.vistas.vistacalculadora;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-
+import java.util.Scanner;
 import edu.telefono.aplicaciones.Aplicaciones;
 import edu.telefono.calculadora.Calculadora;
 
+
 public class VistaCalculadora {
 
-  
-  public static void main(String a[]) {
-		Calculadora calc = new Calculadora();// creamos el objeto calc
-		
-    // operaciones.
-		try {
+	private Scanner teclado;
+	
+	 public void mostrarMenu(){
 				System.out.println("\t    Calculadora\n");
-				System.out.println("Elija la operacion que desea realizar:");
+				System.out.println("Elija la operación que desea realizar:");
 				System.out.println("\n\t1\tSuma");
 				System.out.println("\t2\tResta");
 				System.out.println("\t3\tMultiplicacion");
@@ -23,44 +19,67 @@ public class VistaCalculadora {
 				System.out.println("\t5\tRaiz Cuadrada");
 				System.out.println("\t6\tSeno");
 				System.out.println("\t7\tCoseno");
-				System.out.println("\t8\tRegresar al menu");
-				System.out.println("\nElija una opcion:");
-				BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-				String frase = new String(br.readLine());
-				int opcion = Integer.parseInt(frase);
-
+				System.out.println("\t8\tMenu del Telefono");
+				System.out.println("\nElija una opción:");
+				opcion();
+	 }
+	 
+	 private void opcion(){
+			Calculadora calc = new Calculadora();
+			try {
+				teclado = new Scanner(System.in);
+				int opcion = teclado.nextInt();
 				switch (opcion) {
 				case 1:
-					calc.Suma();
+					calc.num1();
+					calc.num2();
+					calc.operacionSuma();
+					calc.imprimir();
 					break;
 				case 2:
-					calc.Resta();
+					calc.num1();
+					calc.num2();
+					calc.operacionResta();
+					calc.imprimir();
 					break;
 				case 3:
-					calc.Multiplicacion();
+					calc.num1();
+					calc.num2();
+					calc.operacionMulti();
+					calc.imprimir();
 					break;
 				case 4:
-					calc.Division();
+					calc.num1();
+					calc.num2();
+					calc.operacionDivi();
+					calc.imprimir();
 					break;
 				case 5:
-					calc.Raiz();
+					calc.num1();
+					calc.operacionRaiz();
+					calc.imprimir();
 					break;
 				case 6:
-					calc.Seno();
+					calc.num1();
+					calc.operacionSeno();
+					calc.imprimir();
 					break;
 				case 7:
-					calc.Coseno();
+					calc.num1();
+					calc.operacionCoseno();
+					calc.imprimir();
 					break;
 				case 8:
-					Aplicaciones menu = new Aplicaciones();
-					menu.menuPrincipal();
-					break;	
+					//Regresar al muenu del telefono
+					break;
 				default:
-					System.out.println("Opcion incorrecta");
+					System.out.println("Error: opcion invalida");
+					 opcion();
 					break;
 				}
 			} catch (Exception error) {
-
+				System.out.println("Error: opcion invalida");
+				 opcion();
 			}
 		}
 	}
