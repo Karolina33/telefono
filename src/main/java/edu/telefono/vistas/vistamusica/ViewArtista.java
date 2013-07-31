@@ -1,5 +1,6 @@
 package edu.telefono.vistas.vistamusica;
 
+import edu.telefono.aplicaciones.Aplicaciones;
 import edu.telefono.musica.Musica;
 import edu.telefono.musica.Pista;
 
@@ -62,11 +63,12 @@ public class ViewArtista {
 			mostrarPista();
 			break;
 		case 'r':
-			Musica men=new Musica();
-			men.music();
+			ViewMusica mep=new ViewMusica();
+			mep.menuPrincipal();
 			break;
 		case 's':
-			System.exit(0);
+			Aplicaciones apli=new Aplicaciones();
+			apli.menuPrincipal();
 			break;
 		default:
 			System.out.println(" ");
