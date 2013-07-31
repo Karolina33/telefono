@@ -13,12 +13,7 @@ public class ViewFiles {
 
 	private static Scanner teclado;
 	
-	
-	
-	public static void main (String arg[]){
-		Menu();
-	}
-	public static void Menu() {
+	public void Menu() {
 			EnviarArchivo enviar = new EnviarArchivo();
 			teclado = new Scanner(System.in);
 			

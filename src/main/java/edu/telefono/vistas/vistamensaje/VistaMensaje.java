@@ -1,16 +1,24 @@
 package edu.telefono.vistas.vistamensaje;
 
 import java.io.*;
+import java.util.Scanner;
 
 import edu.telefono.mensaje.EscribirSms;
-import edu.telefono.vistas.vistaaplicaciones.Aplicaciones;
+import edu.telefono.aplicaciones.Aplicaciones;
+
+
 
 public class VistaMensaje {
+	
+	
+	private static Scanner teclado;
 
   public void vistamensaje(){
 
-		EscribirSms msj = new EscribirSms();
+		//EscribirSms msj = new EscribirSms();
 		int opcion=1;
+		
+		teclado = new Scanner(System.in);
 		
 		while (opcion!=0)
 		{
@@ -27,12 +35,14 @@ public class VistaMensaje {
 						break;
 					case 1:
 						System.out.println("Escribe tu Mensaje");
+						String msj = teclado.next();
 						EscribirSms escribirSms = new EscribirSms();
-						escribirSms.enviandoMensaje(null);
+						escribirSms.enviandoMensaje(msj);
 						break;
 				
 					case 2:
 						Aplicaciones menu=new Aplicaciones();
+						menu.menuPrincipal();
 						break;
 					case 3:
 					default:
@@ -76,4 +86,4 @@ public class VistaMensaje {
 			return opcion;
 		}
 	}
-}
+
