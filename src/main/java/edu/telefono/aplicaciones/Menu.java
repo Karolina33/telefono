@@ -27,7 +27,7 @@ public class Menu {
 			}
 
 			else if (op == 2) {
-				// ejecutar el Programa Dos
+			VistaCalculadora.main(null);
 			} else if (op == 3) {
 				// ejecutar el Programa Dos
 				Musica mus=new Musica();
