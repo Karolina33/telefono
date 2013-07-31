@@ -1,5 +1,8 @@
 package edu.telefono.archivo;
 
+import edu.telefono.vistas.vistaarchivo.ViewFiles;
+
+import java.awt.Menu;
 import java.io.File;
 
 import javax.ws.rs.core.MediaType;
@@ -14,11 +17,19 @@ import com.sun.jersey.multipart.FormDataMultiPart;
 import com.sun.jersey.multipart.file.FileDataBodyPart;
 import com.sun.jersey.multipart.impl.MultiPartWriter;
 
+import edu.telefono.vistas.vistaarchivo.*;
+
 public class EnviarArchivo {
 
-  public void enviandoArchivo() {
+  public void enviandoArchivo(String ruta) {
+	  
+
+	  
 		String urlDelServicio = "http://localhost:8080/generador-encuestas/resolver/send/file";
-		String urlDelArchivoDelSistema = "/C:/Prueba/Archivo.txt";
+		//String urlDelArchivoDelSistema = "/C:/Prueba/Archivo.txt";
+		
+		String urlDelArchivoDelSistema =ruta ;
+
 
 		ClientConfig configuracionDelCliente = new DefaultClientConfig();
 		configuracionDelCliente.getClasses().add(MultiPartWriter.class);
