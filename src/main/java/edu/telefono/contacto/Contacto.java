@@ -1,6 +1,9 @@
 package edu.telefono.contacto;
 
 public class Contacto
-{
-	public String nom,tel;	
+{	
+	String nom, tel;
+	public Contacto(String nom, String tel) {
+		
+	}
 }
