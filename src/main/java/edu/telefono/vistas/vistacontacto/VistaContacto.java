@@ -1,6 +1,6 @@
 package edu.telefono.vistas.vistacontacto;
 import java.io.*;
-//import edu.telefono.vistas.vistaaplicacion.VistaMenu; aqui se invoca a la vista principal
+import edu.telefono.aplicaciones.*;// aqui se invoca a la vista principal
 
 import edu.telefono.contacto.Agenda;
 
@@ -9,8 +9,9 @@ public class VistaContacto
 	
   public void vistacontacto() {
 		Agenda agenda=new Agenda();
-		int opcion=1;
-		while (opcion!=0)
+		Telefono tel = New Telefono();
+		String opcion="";
+		while (opcion!="S")
 		{
 			System.out.println(" ");
 			System.out.println("Menu Agenda");
@@ -19,36 +20,40 @@ public class VistaContacto
 			System.out.println("3 Buscar Contacto por telefono");
 			System.out.println("4 Modificar Contacto por nombre");
 			System.out.println("5 Eliminar contacto por Nombre");
-			System.out.println("0 Salir");
+			System.out.println("R Regresar");
+			System.out.println("S Salir");
 			opcion=menu();
-		
-		
-		
+			
 				switch (opcion){
-				case 0:
+				case "S":
 					System.out.println("Saliendo de Contactos");
 					System.exit(0);
-					/*aqui se redirecciona a la vista principal*/
+					/*Cierra telefono*/
 					break;
-				case 1:
+				case "R":
+					System.out.println("Regresando a Telefono");
+					tel.menuPrincipal();
+					/*aqui se redirecciona a la vista principal*/
+					break;	
+				case "1":
 					agenda.agregar();
 					break;
 			
-				case 2:
+				case "2":
 					agenda.busquedanom();
 					break;
 				
-				case 3:			
+				case "3":			
 					agenda.busquedatel();
 					break;
 		
-				case 4:
+				case "4":
 					agenda.modnombre();
 					break;
 		
-				case 5:
+				case "5":
 					agenda.elimnom();
-					break;	
+					break;		
 				default:
 					System.out.println("opcion no valida");
 					break;
@@ -58,14 +63,14 @@ public class VistaContacto
 		
 }
 	}
-	static int menu()
+	static String menu()
 	{
 		InputStreamReader is = new InputStreamReader(System.in);
 		BufferedReader br = new BufferedReader(is);
-		int opcion=1;
+		String opcion="";
 		try
 		{
-			opcion = Integer.parseInt(br.readLine());
+			opcion = br.readLine();
 		}
 		catch(IOException e)
 		{
