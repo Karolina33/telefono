@@ -9,7 +9,7 @@ public class VistaContacto
 	
   public void vistacontacto() {
 		Agenda agenda=new Agenda();
-		Telefono tel = New Telefono();
+		Telefono tel = new Telefono();
 		String opcion="";
 		while (opcion!="S")
 		{
