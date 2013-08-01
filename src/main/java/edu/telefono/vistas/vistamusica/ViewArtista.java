@@ -32,9 +32,9 @@ public class ViewArtista {
 		Scanner entrada = new Scanner(System.in); 
 		try {
 			opcion = (char)System.in.read();
-		} catch (IOException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+	
 		}  
 		
 		
@@ -71,9 +71,9 @@ public class ViewArtista {
 			apli.menuPrincipal();
 			break;
 		default:
-			System.out.println(" ");
+			/*System.out.println(" ");
 			System.out.println("La eleccion no es correcta vuelve a elegir");
-			System.out.println(" ");
+			System.out.println(" ");*/
 			elegirArtista();
 		}
 		

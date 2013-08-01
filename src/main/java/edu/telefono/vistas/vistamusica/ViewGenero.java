@@ -63,9 +63,9 @@ public class ViewGenero {
 			System.exit(0);
 			break;
 		default:
-			System.out.println(" ");
+			/*System.out.println(" ");
 			System.out.println("La eleccion no es correcta vuelve a elegir");
-			System.out.println(" ");
+			System.out.println(" ");*/
 			elegirGenero();
 		}
 		

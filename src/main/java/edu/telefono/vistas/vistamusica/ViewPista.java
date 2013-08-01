@@ -195,7 +195,7 @@ public class ViewPista {
 				apli.menuPrincipal();
 				break;
 			default:
-				seleccionarPista();
+			seleccionarPista();
 			}
 			
 		}else if(result==('r')){

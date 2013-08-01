@@ -1,7 +1,10 @@
 package edu.telefono.vistas.vistamusica;
 
 import edu.telefono.aplicaciones.*;
+
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class ViewMusica {
@@ -16,10 +19,10 @@ public class ViewMusica {
 	public static char opcion;
 	
 		
-public void menuPrincipal(){
+public static void menuPrincipal(){
 		
 		String titulo =("\tTELEFONO \n  (Aplicación Musica) \n Elegir Tipo de Busqueda\n");
-		Scanner entrada=new Scanner(System.in);
+		
 		System.out.println(titulo);
 		System.out.println("1.  Busqueda Por Genero");
 		System.out.println("2.  Busqueda Por Artista ");
@@ -27,20 +30,23 @@ public void menuPrincipal(){
 		System.out.println("Para regresar a la pantalla anterior oprimir: R");
 		System.out.println("Para salir de aplicación oprimir: S\n");
 		System.out.println("  Elige una Opción: ");
-		//opcion = entrada.nextLine();
 		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String frase;
 		try {
-			opcion = (char)System.in.read();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} 
+			
+			//frase = new String(br.readLine());
+
+		//opcion = frase.charAt(0);
+			opcion=(char)System.in.read();
 				
 		switch (opcion){
 		case '1':
+		
 			buscarGenero();
-			break;
+			//break;
 		case '2':
+		
 			buscarArtista();
 			break;
 		case 'r':
@@ -50,32 +56,37 @@ public void menuPrincipal(){
 			salir();
 			break;
 		default:
-			System.out.println(" ");
+			/*System.out.println(" ");
 			System.out.println("La eleccion no es correcta vuelve a elegir");
-			System.out.println(" ");			
+			System.out.println(" ");*/		
 			regresarMenuPrincipal();
+		break;
+		}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+		
 		}
 		
 	}
 	
-	public  void buscarGenero(){
+	public static void buscarGenero(){
 		ViewGenero genero=new ViewGenero();
 		genero.elegirGenero();
 					
 	}
 	
-	public void buscarArtista(){
+	public static void buscarArtista(){
 		ViewArtista artista=new ViewArtista();
 		artista.elegirArtista();
 				
 	}
 	
-	public  void salir(){
+	public static void salir(){
 		Aplicaciones apli=new Aplicaciones();
 		apli.menuPrincipal();
 	}
 	
-	public  void regresarMenuPrincipal(){
+	public static void regresarMenuPrincipal(){
 		menuPrincipal();				
 	}	
 
